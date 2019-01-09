@@ -1,5 +1,7 @@
-1.test
+1. Concurrency is when a computer program runs different parts of the same program in
+parallell. Paralellism is running different programs in paralell. That is, using muliple cores/CPUs
+to run different programs.
+
 2.
 3.
 4.
-5.
