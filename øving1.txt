@@ -2,6 +2,6 @@
 parallell. Paralellism is running different programs in paralell. That is, using muliple cores/CPUs
 to run different programs.
 
-2.test 2 123 
+2.
 3.
 4.
