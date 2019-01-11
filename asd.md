@@ -1,23 +1,46 @@
 # Reasons for concurrency and parallelism
 
 
-To complete this exercise you will have to use git. Create one or several commits that adds answers to the following questions and push it to your groups repository to complete the task.
-
-When answering the questions, remember to use all the resources at your disposal. Asking the internet isn't a form of "cheating", it's a way of learning.
-
  ### What is concurrency? What is parallelism? What's the difference?
- > *Your answer here*
+ Øving 1 Teori
+
+
+ 1.  Concurrency is when more than one task is run intertwined, that is,
+ the CPU may switch between the different task without neccesairly completing
+ them.
+ Parallellism is running more than one task simultaneously using multiple cores/CPUs.
+
+
+
+ Fra stackoverflow:
+ Anta at programmet har 2 tråder(threads)
+ ========================================================
+ Concurrency                 Concurrency + parallelism
+ (Single-Core CPU)           (Multi-Core CPU)
+  ___                         ___ ___
+ |th1|                       |th1|th2|
+ |   |                       |   |___|
+ |___|___                    |   |___
+     |th2|                   |___|th2|
+  ___|___|                    ___|___|
+ |th1|                       |th1|
+ |___|___                    |   |___
+     |th2|                   |   |th2|
+ ========================================================
+
 
  ### Why have machines become increasingly multicore in the past decade?
- > *Your answer here*
+  CPU speeds have not increased because of massive heat developed for higher clock speeds.
+ This has been compensated for by including more cores in CPUs and developing programs
+ for multi-threading (taking advantage of muliple cores)
 
  ### What kinds of problems motivates the need for concurrent execution?
  (Or phrased differently: What problems do concurrency help in solving?)
- > *Your answer here*
- 
+  Increased performance
+
  ### Does creating concurrent programs make the programmer's life easier? Harder? Maybe both?
  (Come back to this after you have worked on part 4 of this exercise)
- > *Your answer here*
+  When problems must be solved within a time period
 
  ### What are the differences between processes, threads, green threads, and coroutines?
  > *Your answer here*
