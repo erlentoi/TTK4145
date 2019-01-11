@@ -7,9 +7,7 @@
  the CPU may switch between the different task without neccesairly completing
  them.
  Parallellism is running more than one task simultaneously using multiple cores/CPUs.
-
-
-
+ 
  Fra stackoverflow:
  Anta at programmet har 2 tråder(threads)
  ========================================================
@@ -34,11 +32,11 @@
 
  ### What kinds of problems motivates the need for concurrent execution?
  (Or phrased differently: What problems do concurrency help in solving?)
-  Increased performance
+  Increased performance.  When problems must be solved within a time period
+
 
  ### Does creating concurrent programs make the programmer's life easier? Harder? Maybe both?
  (Come back to this after you have worked on part 4 of this exercise)
-  When problems must be solved within a time period
 
  ### What are the differences between processes, threads, green threads, and coroutines?
  > *Your answer here*
