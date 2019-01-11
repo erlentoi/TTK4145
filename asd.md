@@ -2,10 +2,8 @@
 
 
  ### What is concurrency? What is parallelism? What's the difference?
- Øving 1 Teori
 
-
- 1.  Concurrency is when more than one task is run intertwined, that is,
+  Concurrency is when more than one task is run intertwined, that is,
  the CPU may switch between the different task without neccesairly completing
  them.
  Parallellism is running more than one task simultaneously using multiple cores/CPUs.
@@ -19,10 +17,10 @@
  (Single-Core CPU)           (Multi-Core CPU)
   ___                         ___ ___
  |th1|                       |th1|th2|
- |   |                       |   |___|
+ |   |                       |   |___
  |___|___                    |   |___
      |th2|                   |___|th2|
-  ___|___|                    ___|___|
+  ___|_|                    ___|___|
  |th1|                       |th1|
  |___|___                    |   |___
      |th2|                   |   |th2|
