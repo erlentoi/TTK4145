@@ -1,7 +1,35 @@
-1. Concurrency is when a computer program runs different parts of the same program in
-parallell. Paralellism is running different programs in paralell. That is, using muliple cores/CPUs
-to run different programs.
+Øving 1 Teori
 
-2.
-3.
+
+1.  Concurrency is when more than one task is run intertwined, that is,
+the CPU may switch between the different task without neccesairly completing
+them.
+Parallellism is running more than one task simultaneously using multiple cores/CPUs.
+
+
+
+Fra stackoverflow:
+Anta at programmet har 2 tråder(threads)
+========================================================
+Concurrency                 Concurrency + parallelism
+(Single-Core CPU)           (Multi-Core CPU)
+ ___                         ___ ___
+|th1|                       |th1|th2|
+|   |                       |   |___|
+|___|___                    |   |___
+    |th2|                   |___|th2|
+ ___|___|                    ___|___|
+|th1|                       |th1|
+|___|___                    |   |___
+    |th2|                   |   |th2|
+========================================================
+
+
+2.  CPU speeds have not increased because of massive heat developed for higher clock speeds.
+This has been compensated for by including more cores in CPUs and developing programs
+for multi-threading (taking advantage of muliple cores)
+
+
+3.Increased performance
+
 4.
