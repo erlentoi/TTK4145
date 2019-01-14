@@ -3,7 +3,7 @@
 
  ### What is concurrency? What is parallelism? What's the difference?
 
-  Concurrency is when more than one task is run intertwined, that is,
+   Concurrency is when more than one task is run intertwined, that is,
  the CPU may switch between the different task without neccesairly completing
  them.
  Parallellism is running more than one task simultaneously using multiple cores/CPUs.
@@ -26,13 +26,13 @@
 
 
  ### Why have machines become increasingly multicore in the past decade?
-  CPU speeds have not increased because of massive heat developed for higher clock speeds.
+   CPU speeds have not increased because of massive heat developed for higher clock speeds.
  This has been compensated for by including more cores in CPUs and developing programs
  for multi-threading (taking advantage of muliple cores)
 
  ### What kinds of problems motivates the need for concurrent execution?
  (Or phrased differently: What problems do concurrency help in solving?)
-  Increased performance.  When problems must be solved within a time period
+   Increased performance.  When problems must be solved within a time period
 
 
  ### Does creating concurrent programs make the programmer's life easier? Harder? Maybe both?
@@ -42,7 +42,7 @@
  > *Your answer here*
 
  ### Which one of these do `pthread_create()` (C/POSIX), `threading.Thread()` (Python), `go` (Go) create?
- > *Your answer here*
+  Threads
 
  ### How does pythons Global Interpreter Lock (GIL) influence the way a python Thread behaves?
  > *Your answer here*
