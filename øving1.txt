@@ -32,14 +32,20 @@
 
  ### What kinds of problems motivates the need for concurrent execution?
  (Or phrased differently: What problems do concurrency help in solving?)
-   Increased performance.  When problems must be solved within a time period
+   Increased performance.  When problems must be solved within a time period, or
+   when multiple tasks needs to be solved (possibly) at the same time instant.
 
 
  ### Does creating concurrent programs make the programmer's life easier? Harder? Maybe both?
  (Come back to this after you have worked on part 4 of this exercise)
 
  ### What are the differences between processes, threads, green threads, and coroutines?
- > *Your answer here*
+ > A process handles big tasks such as executing programs, while threads are used for
+ smaller tasks. Processes contain threads. Green threads are threads that are emulated by
+ an program without using the OS. Coroutines are simmilar to the concurrency
+  concept but they are dependent on each other and share variables. In addition
+  only 1 coruotine can run at a time and a coroutine stops only when its told to.
+
 
  ### Which one of these do `pthread_create()` (C/POSIX), `threading.Thread()` (Python), `go` (Go) create?
   Threads
