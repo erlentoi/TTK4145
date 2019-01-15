@@ -4,9 +4,6 @@
 from threading import Thread
 
 
-# Potentially useful thing:
-#   In Python you "import" a global variable, instead of "export"ing it when you declare it
-#   (This is probably an effort to make you feel bad about typing the word "global")
 i = 0
 
 def incrementingFunction():
@@ -14,13 +11,12 @@ def incrementingFunction():
 
     for a in range(1,1000000):
         i+=1
-    # TODO: increment i 1_000_000 times
+
 
 def decrementingFunction():
     global i
     for a in range(1,1000000):
         i-=1
-    # TODO: decrement i 1_000_000 times
 
 
 
@@ -28,15 +24,15 @@ def main():
     # TODO: Something is missing here (needed to print i)
     global i #ikke nødvendig? (fungerer også uten)
 
-
+    #lager thread objecter
     incrementing = Thread(target = incrementingFunction, args = (),)
     decrementing = Thread(target = decrementingFunction, args = (),)
     
-    # TODO: Start both threads
+    #starter threads
     incrementing.start()
     decrementing.start()
 
-
+    #venter til begge tråder er ferdig
     incrementing.join()
     decrementing.join()
     
