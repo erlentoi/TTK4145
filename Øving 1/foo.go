@@ -39,7 +39,13 @@ func main() {
 
 	// We have no way to wait for the completion of a goroutine (without additional syncronization of some sort)
 	// We'll come back to using channels in Exercise 2. For now: Sleep.
+
+	for d := 0; d < 1000; d++ {
+		Println(i)
+
+	}
 	time.Sleep(100 * time.Millisecond)
+
 	Println("The magic number is:", i)
 
 }
