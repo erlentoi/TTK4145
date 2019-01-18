@@ -5,13 +5,14 @@ package main
 import (
 	. "fmt"
 	"runtime"
+	"time"
 )
 
 // Control signals
 
-func number_server(add_number <-chan int, number chan<- int) {
+func number_server(add_number <-chan int, number chan<- int, finished chan<- bool) {
 	var i = 0
-
+	var nmb_finished = 0
 	// This for-select pattern is one you will become familiar with if you're using go "correctly".
 	for {
 		select {
@@ -28,7 +29,15 @@ func number_server(add_number <-chan int, number chan<- int) {
 
 			// TODO: receive different messages and handle them correctly
 			// You will at least need to update the number and handle control signals.
+
+		case t:= <-finished:
+			nmb_finished++
+			if (nmb_finished==2){}
+				break
+			}
+
 		}
+
 	}
 }
 
@@ -70,6 +79,6 @@ func main() {
 	go decrementing(ch_change_i, ch_finished)
 
 	number_server(ch_change_i, ch_i_value)
-
+	time.Sleep(1000 * time.Millisecond)
 	Println("The magic number is:", <-ch_i_value)
 }
