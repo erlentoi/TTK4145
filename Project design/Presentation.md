@@ -27,7 +27,7 @@ Based off of https://github.com/aalexjo/TTK4145-RTP design, following the Design
 ### 3. Example scenarios:
 - 1. System is idle.A button gets pushed, one elevator serves the order. While the elevator is traveling, another button gets pushed in the opposite end of where the traveling elevator is going.
 
-In the elevator that responds: Driver adds the order to the queue. FSM is updated with the order and passes it along with the elevator state to the Cost module and Interface module. The Cots module, already having received the order from the running elevator, calculates the optimal cost. The Network module then distributes this information to all other elevators.
+In the elevator that responds: Driver adds the order to the queue. FSM is updated with the order and passes it along with the elevator state to the Cost module and Interface module. The Cost module, already having received the order from the running elevator, calculates the optimal cost. The Network module then distributes this information to all other elevators.
 The elevator that is already running receives the order at the Network module, and it gets passed to its Cost module. The Cost module minimizes the cost and passes the calculated orders back to the interface which accepts the order if it agrees with the other cost calcualtions.
 
 
