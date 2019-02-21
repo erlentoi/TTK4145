@@ -15,7 +15,11 @@ Based off of https://github.com/aalexjo/TTK4145-RTP design, following the Design
 - software crash/loss of power
 - ..
 
-### 2.
+### 2. Modules
+-fsm
+-network(provided)
+  -Distribution included (Alternative 2: Reassigning all requests? If yes, it is provided /Project-resources/blob/master/cost_fns )
+-cost(provided)
 
 
 
