@@ -15,13 +15,15 @@ Based off of https://github.com/aalexjo/TTK4145-RTP design, following the Design
 - software crash/loss of power
 - ..
 
-### 2. Modules
+### 2. Modules:
 - main
 - fsm
 - network(provided)
-  - Distribution (Alternative 2: Reassigning all requests? If yes, it is provided /Project-resources/blob/master/cost_fns )
-    - "In order for this approach to work, it is necessary that either (...) or b) all elevators that calculate the redistribution eventually come to the same conclusion"
+  - Distribution ("Alternative 2: Reassigning all requests" ? If yes, it is provided TTK4145/Project-resources/blob/master/cost_fns )
+    - Reassigning all requests: "In order for this approach to work, it is necessary that either a)(...) or b) all elevators that calculate the redistribution eventually come to the same conclusion"
 - cost(provided)
+- some kind of module that handles each elevators interface with the network? (like in aalexjo)
+
 
 
 
