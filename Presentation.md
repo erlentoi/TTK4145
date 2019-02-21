@@ -5,7 +5,8 @@ Based off of https://github.com/aalexjo/TTK4145-RTP design, following the Design
 
 
 ### 1. What must be handled:
-
+-Button presses
+-
 
 
 
